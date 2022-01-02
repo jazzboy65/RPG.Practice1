@@ -119,6 +119,11 @@ public abstract class Unit implements Movable, Serializable {
 
     }
 
+    public int getForce() {
+        return force;
+    }
+
+
     public void setEnergy(int energy) { //"Setter" - функция, которая устанавливает значение выбранного поля
         this.energy = energy;
     }
