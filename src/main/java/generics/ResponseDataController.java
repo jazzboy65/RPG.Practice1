@@ -19,4 +19,7 @@ public class ResponseDataController {
         responseData.setErrors(new Error[]{new Error(404,"Loan not found")});
         return responseData;
     }
+    public Pair<Boolean,Error> getPair() {
+        return new Pair<>(true,new Error(200,"Success"));
+    }
 }

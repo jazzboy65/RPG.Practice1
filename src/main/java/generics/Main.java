@@ -10,5 +10,8 @@ public class Main {
         ResponseData<GetLoansData> error1 = controller.getLoansWithError();
         Error[] errors = error1.getErrors();
         Error l = errors[0];
+        Pair<Boolean, Error> p1 = controller.getPair();
+        Boolean first = p1.getFirst();
+        Error second = p1.getSecond();
     }
 }
